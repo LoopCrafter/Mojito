@@ -6,7 +6,7 @@ gsap.registerPlugin(SplitText);
 
 const About = () => {
   useGSAP(() => {
-    const split = SplitText.create("h2", {
+    const split = SplitText.create("#about h2", {
       type: "lines",
     });
     const scrollTimeline = gsap.timeline({
