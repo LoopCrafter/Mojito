@@ -1,3 +1,4 @@
+"use client";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { navLinks } from "../constants";
@@ -6,13 +7,13 @@ const Navbar = () => {
   useGSAP(() => {
     const navTween = gsap.timeline({
       scrollTrigger: {
-        trigger: "nav",
+        trigger: "nav.navbar",
         start: "bottom top",
       },
     });
 
     navTween.fromTo(
-      "nav",
+      "nav.navbar",
       { backgroundColor: "transparent" },
       {
         backgroundColor: "#00000050",
@@ -24,11 +25,11 @@ const Navbar = () => {
   });
 
   return (
-    <nav>
+    <nav className="navbar">
       <div>
         <a href="#home" className="flex items-center gap-2">
           <img src="/images/logo.png" alt="logo" />
-          <p>Mojito</p>
+          <p>Mugio</p>
         </a>
 
         <ul>

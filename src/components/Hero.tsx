@@ -38,7 +38,6 @@ const Hero = () => {
           start: "top top",
           end: "bottom top",
           scrub: true,
-          markers: true,
         },
       })
       .to(".left-leaf", { y: -200 }, 0)
