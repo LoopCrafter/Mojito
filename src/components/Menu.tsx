@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { allCocktails } from "../constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap/all";
