@@ -1,54 +1,71 @@
-# React + TypeScript + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+   <div>
+    <img src="https://img.shields.io/badge/-React-blue?style=for-the-badge&logo=react&logoColor=white" />
+    <img src="https://img.shields.io/badge/-GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+  </div>
 
-Currently, two official plugins are available:
+  <h3 align="center">GSAP-Powered Cocktail Website</h3>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+   <div align="center">
+     A modern scroll-driven web experience built with React, GSAP, and Tailwind CSS.
+   </div>
+</div>
 
-## Expanding the ESLint configuration
+## 📋 Table of Contents
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. 🤖 [Introduction](#introduction)
+2. ⚙️ [Tech Stack](#tech-stack)
+3. 🔋 [Features](#features)
+4. 🤸 [Quick Start](#quick-start)
+5. 🔗 [Assets](#assets)
+6. 🚀 [More](#more)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🤖 Introduction
+
+This project is a visually immersive and interactive cocktail-themed website developed using React and powered by GSAP animations. Designed to deliver a cinematic experience, the website features split-text animations, scroll-triggered effects, image masking, parallax scrolling, and custom carousels. All animations are precisely coordinated to provide an engaging and smooth experience on every device size.
+
+## ⚙️ Tech Stack
+
+- **[GSAP](https://gsap.com/)**: Used for advanced animations including ScrollTrigger, SplitText, pinned effects, and timeline syncing.
+- **[React](https://react.dev/)**: Provides a modular component-based structure for building a responsive UI.
+- **[Tailwind CSS](https://tailwindcss.com/)**: Enables utility-first styling for a fast and clean design workflow.
+- **[Vite](https://vitejs.dev/)**: Ultra-fast development tooling for modern web apps.
+
+## 🔋 Features
+
+👉 **SplitText Animations**: Dramatic text reveals for headings and section intros.  
+👉 **ScrollTrigger Effects**: Timeline-based animations synced with scroll.  
+👉 **Parallax Scrolling**: Depth effects for immersive scrolling.  
+👉 **Pinned Sections**: Fixed content sections with animated elements.  
+👉 **Scroll-Synced Video Playback**: Integrate videos controlled by scroll position.  
+👉 **Image Masking Effects**: Animated transitions with masks and pins.  
+👉 **Custom Carousel**: Fully animated and customizable slider component.  
+👉 **Responsive Design**: Fully adaptable layout across all devices.
+
+## 🤸 Quick Start
+
+### Prerequisites
+
+Ensure you have these installed:
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/)
+
+### Installation
+
+```bash
+git clone https://github.com/your-username/gsap-cocktail-site.git
+cd gsap-cocktail-site
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Start Development Server
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm run dev
 ```
+
+Open your browser at [http://localhost:5173](http://localhost:5173)
